@@ -1,10 +1,10 @@
 %-------------------------
-% Resume in LateX
+% Resume in LaTeX
 % Author : Sourabh Bajaj
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -54,6 +54,12 @@
   }
 }
 
+\newcommand{\resumeItemSimple}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -93,8 +99,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email: \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-  \href{https://sourabhbajaj.com/}{sourabhbajaj.com} & Mobile: \href{tel:+11234567890}{+1-123-456-7890} \\
+  \textbf{Wardah Pervez} & Email: \href{mailto:wardahpervez@gmail.com}{wardahpervez@gmail.com}\\
+  8084 Forest Lake Dr Apt 2, Youngstown, OH, 44512 & Mobile: \href{tel:+13462356477}{346-235-6477}\\
 \end{tabular*}
 
 
@@ -102,11 +108,11 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Master of Science in Computer Science; GPA: 4.00}{Aug 2012 -- Dec 2013}
-    \resumeSubheading
-      {Birla Institute of Technology and Science}{Pilani, India}
-      {Bachelor of Engineering in Electrical and Electronics; GPA: 3.66 (9.15/10.0)}{Aug 2008 -- July 2012}
+      {Karachi Medical and Dental College}{Karachi, Pakistan}
+      {Bachelor of Medicine and Surgery}{Jan 2013 -- May 2018}
+      \resumeItemListStart
+        \resumeItemSimple{Distinctions in Anatomy, Biochemistry, Physiology, Pathology, Community Medicine, ENT, Eye, Surgery, OBGYN, Pediatrics}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -115,86 +121,98 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Google}{Mountain View, CA}
-      {Software Engineer}{Oct 2016 -- Present}
+      {St.\,Elizabeth Boardman Hospital}{Boardman, OH}
+      {Resident, Family Medicine}{Oct 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{TensorFlow}
-          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-        \resumeItem{Apache Beam}
-          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+        \resumeItem{PGY-1 \& PGY-2 Training}{Completed PGY-1 training and currently practicing as a second-year resident in a comprehensive family medicine training program.}
+        \resumeItem{Clinical Rotations}{Gained hands-on experience in clinic, inpatient, emergency, ICU, and pediatric settings.}
+        \resumeItem{Leadership}{Member of the didactics committee; elected chief resident for upcoming PGY-3 year.}
       \resumeItemListEnd
-      
-% --------Multiple Positions Heading------------
-  %  \resumeSubSubheading
-  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
-  %   \resumeItemListStart
-  %      \resumeItem{Apache Beam}
-  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-  %   \resumeItemListEnd
 
-%-------------------------------------------
+    % --------Multiple Positions Heading------------
+    %  \resumeSubSubheading
+    %   {Software Engineer I}{Oct 2014 -- Sep 2016}
+    %   \resumeItemListStart
+    %      \resumeItem{Apache Beam}
+    %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    %   \resumeItemListEnd
 
     \resumeSubheading
-      {Coursera}{Mountain View, CA}
-      {Senior Software Engineer}{Jan 2014 -- Oct 2016}
+      {City Care Family Practice}{New York, NY}
+      {Medical Assistant}{Apr 2022 -- Oct 2022}
       \resumeItemListStart
-        \resumeItem{Notifications}
-          {Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-        \resumeItem{Nostos}
-          {Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-        \resumeItem{Workflows}
-          {Dataduct an open source workflow framework to create and manage data pipelines leveraging reusables patterns to expedite developer productivity.}
-        \resumeItem{Data Collection}
-          {Designed the internal survey and crowdsourcing platform which allowed for creating various tasks for crowdsourcing or embedding surveys across the Coursera platform.}
-        \resumeItem{Dev Environment}
-          {Analytics environment based on Docker and AWS, standardized the Python and R dependencies. Wrote the core libraries that are shared by all data scientists.}
-        \resumeItem{Data Warehousing}
-          {Setup, schema design and management of Amazon Redshift. Built an internal app for access to the data using a web interface. Dataduct integration for daily ETL injection into Redshift.}
-        \resumeItem{Recommendations}
-          {Core service for all recommendation systems at Coursera, currently used on the homepage and throughout the content discovery process. Worked on both offline training and online serving.}
-        \resumeItem{Content Discovery}
-          {Improved content discovery by building a new onboarding experience on coursera. Used this to personalize the search and browse experience. Also worked on ranking and indexing improvements.}
-        \resumeItem{Course Dashboards}
-          {Instructor dashboards and learner surveying tools, which helped instructors run their class better by providing data on Assignments and Learner Activity.}
+        \resumeItem{Patient Intake \& Procedures}{Assisted with patient intake, clinical documentation, and procedures including I\&D, skin biopsies, pap smears, and contraceptive insertions.}
+        \resumeItem{Chronic Care Management}{Provided Chronic Care Management (CCM) services.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lucena Research}{Atlanta, GA}
-      {Data Scientist}{Summer 2012 and 2013}
+      {Heights Family Practice}{Youngstown, OH}
+      {Medical Assistant}{Aug 2023 -- Present}
       \resumeItemListStart
-        \resumeItem{Portfolio Management}
-          {Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-        \resumeItem{QuantDesk}
-          {Python backend for a web application used by hedge fund managers for portfolio management.}
+        \resumeItem{Duties}{Carried out CCM, RPM and devised care plans for the patients.}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Georgia Institute of Technology}{Atlanta, GA}
-      {Research and Teaching Assistant}{Jan 2012 -- Dec 2013}
+      {Aga Khan University Hospital}{Karachi, Pakistan}
+      {Resident, General Surgery}{Jan 2021 -- Apr 2021}
       \resumeItemListStart
-        \resumeItem{Research Assistant -- Machine Learning}
-          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-        \resumeItem{Teaching Assistant -- Computational Investing}
-          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+        \resumeItem{Surgical Rotations}{Rotated in Breast Surgery, General Surgery, and Surgical Emergency departments; assisted in major procedures and managed ward and outpatient patients.}
       \resumeItemListEnd
 
+    \resumeSubSubheading
+      {Intern}{Jan 2019 -- Dec 2019}
+      \resumeItemListStart
+        \resumeItem{Rotations}{Neurosurgery, General Surgery, Emergency Medicine, Pulmonary Medicine, Pediatrics, Internal Medicine}{Jan 2019 -- Apr 2019}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
-%-----------PROJECTS-----------------
-\section{Projects}
+%-----------ADDITIONAL EXPERIENCE-----------------
+\section{Additional Experience}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source Python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{GitHub Visualization}
-      {Data visualization of Git log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step-by-step instructions on setting up developer environment on macOS.}
+
+    \resumeSubheading
+      {Tabba Institute of Heart}{Karachi, Pakistan}
+      {Externship, Department of Cardiology}{Sept 2018}
+      \resumeItemListStart
+        \resumeItem{Cardiac Emergency Management}{Managed patients in cardiac emergency and attended electrophysiology classes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Liaquat National Hospital}{Karachi, Pakistan}
+      {Externship, Department of Pediatrics}{July 2014}
+      \resumeItemListStart
+        \resumeItem{Ward \& Outpatient Pediatrics}{Completed ward rotation and frequent outpatient clinic visits.}
+      \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
-%
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+  \resumeItemListStart
+    \resumeItem{"Management of Pediatric Glioblastoma"}{Journal of Pakistan Medical Association}
+    \resumeItem{"Gross vs Subtotal Resection of Pediatric Craniopharyngioma"}{Journal of Pakistan Medical Association}
+  \resumeItemListEnd
+
+
+%-----------ACTIVITIES \& CERTIFICATIONS-----------------
+\section{Activities \& Certifications}
+  \resumeItemListStart
+    \resumeItem{HOPES Executive Committee}{Executive committee member, non-profit HOPES at Abbasi Shaheed Hospital, Karachi}
+    \resumeItem{BLS Certification}{American Heart Association, Dec 2020 -- Dec 2022}
+    \resumeItem{Medical Council Certification}{Pakistan Medical Council Certified}
+  \resumeItemListEnd
+
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \resumeItemListStart
+    \resumeItem{Procedural Skills}{Joint injections, pap smears, cryotherapy, tympanometry, suture placement/removal}
+    \resumeItem{Invasive Procedures}{Lumbar puncture, chest tube insertion, burr holes, lipoma/sebaceous cyst excision}
+  \resumeItemListEnd
+
+
 %--------SKILLS------------
 %\section{Skills}
 %  \resumeSubHeadingListStart
